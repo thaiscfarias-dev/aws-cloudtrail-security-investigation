@@ -25,7 +25,7 @@ A equipe da cafeteria *Café* relatou que o site web hospedado em uma instância
   * Site funcionando normalmente: ![Site Normal](screenshots/02-task1-normal-cafe-website.png)
 
 ### Task 2: Habilitação do CloudTrail e Detecção do Ataque
-* **O que foi feito:** Criação de uma trilha (*Trail*) no CloudTrail apontando para um bucket S3 dedicado (`monitoring####`). Após alguns instantes, o site foi comprometido pelo invasor e uma regra maliciosa liberando a porta 22 para a internet inteira (`0.0.0.0/0`) foi injetada no Security Group.
+* **O que foi feito:** Criação de uma trilha (*Trail*) no CloudTrail apontando para um bucket S3 dedicado (`monitoring5555`). Após alguns instantes, o site foi comprometido pelo invasor e uma regra maliciosa liberando a porta 22 para a internet inteira (`0.0.0.0/0`) foi injetada no Security Group.
 * **Evidências:**
   * Trilha do CloudTrail criada (`monitor`): ![CloudTrail Criado](screenshots/03-task2-cloudtrail-created.png)
   * Site da cafeteria hackeado: `![Site Hackeado](screenshots/04-task2-hacked-website.png)`

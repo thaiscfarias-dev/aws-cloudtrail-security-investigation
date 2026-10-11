@@ -28,8 +28,8 @@ A equipe da cafeteria *Café* relatou que o site web hospedado em uma instância
 * **O que foi feito:** Criação de uma trilha (*Trail*) no CloudTrail apontando para um bucket S3 dedicado (`monitoring5555`). Após alguns instantes, o site foi comprometido pelo invasor e uma regra maliciosa liberando a porta 22 para a internet inteira (`0.0.0.0/0`) foi injetada no Security Group.
 * **Evidências:**
   * Trilha do CloudTrail criada (`monitor`): ![CloudTrail Criado](screenshots/03-task2-cloudtrail-created.png)
-  * Site da cafeteria hackeado: `![Site Hackeado](screenshots/04-task2-hacked-website.png)`
-  * Regra maliciosa no Security Group: `![Regra Maliciosa](screenshots/05-task2-malicious-security-group.png)`
+  * Site da cafeteria hackeado: ![Site Hackeado](screenshots/04-task2-hacked-website.png)
+  * Regra maliciosa no Security Group: ![Regra Maliciosa](screenshots/05-task2-malicious-security-group.png)
 
 ### Task 3: Análise de Logs com o Linux (Terminal & Grep)
 * **O que foi feito:** Conexão SSH via PuTTY na instância EC2, download e descompactação dos arquivos de log do CloudTrail do S3 (`gunzip`), e uso de comandos `grep` e `python -m json.tool` para filtrar eventos por IP de origem e nome de eventos.
